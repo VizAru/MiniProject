@@ -1,0 +1,12 @@
+[filename, foldername] = uiputfile('Where do you want the file saved?');
+complete_name = fullfile(foldername, filename);
+imwrite(TheArray, complete_name);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[FileName, PathName] = uiputfile('*.bmp', 'Save As'); %# <-- dot
+Name = fullfile(PathName,FileName);  %# <--- reverse the order of arguments
+imwrite(img, Name, 'bmp');
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bw=imread
+bw2=bwareafilt(bw,2
+imshowpair(bw,bw2,'montage')
